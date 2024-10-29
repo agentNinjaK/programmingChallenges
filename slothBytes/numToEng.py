@@ -16,6 +16,8 @@ def numToEng(num):
             answer += endsInTy[num % 10]+"teen"
         elif(num % 100 > 9):# num > 10 but  < 13
             answer += others[num % 10]
+        else:
+            answer += singles[num % 10]
     if(num <= 10):
         answer = singles[num]
 
@@ -35,5 +37,11 @@ print(numToEng(909))
 
 print(numToEng(412))
 # 'four hundred twelve'
+
+print(numToEng(47))
+# 'fourty seven'
+
+print(numToEng(102))
+# 'one hundred two'
 
 # possible tests to improve this - negative integers, leading zeroes, non-numbers
