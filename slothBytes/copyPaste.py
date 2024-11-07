@@ -47,3 +47,4 @@ assert keyboardShortcut("No copy paste here") == "No copy paste here"
 
 #Example 5 - weird in between stuff, where I'm uncertain as to desired behavior and am making it up!
 assert keyboardShortcut("In Ctrl + C between Ctrl + V words") == "In between words"
+#I could see "In between In words" as another reasonable answer.
