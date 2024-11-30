@@ -10,14 +10,14 @@ def num_split(number):
         place*=10
     if(switchFlag):
         answer = [-1*key for key in answer]
-    print(answer)
-    return number
+    #print(answer)
+    return answer
 
-num_split(39)
+print(num_split(39))
 #output =[30, 9]
 
-num_split(-434)
+print(num_split(-434))
 #output = [-400, -30, -4]
 
-num_split(100)
+print(num_split(100))
 #output =[100, 0, 0]
